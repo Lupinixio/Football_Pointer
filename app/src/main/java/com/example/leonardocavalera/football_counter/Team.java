@@ -2,6 +2,7 @@ package com.example.leonardocavalera.football_counter;
 
 import android.widget.TextView;
 
+
 public class Team {
 
     private int mScore;
