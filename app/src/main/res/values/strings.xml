@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Football Counter</string>
+    <string name="button_goal">Gooooal!</string>
+    <string name="button_corner">Corner</string>
+    <string name="button_foul">Foul</string>
+    <string name="button_reset">Reset all scores</string>
+
 </resources>
