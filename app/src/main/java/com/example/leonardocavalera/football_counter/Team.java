@@ -3,7 +3,7 @@ package com.example.leonardocavalera.football_counter;
 import android.widget.TextView;
 
 
-public class Team {
+class Team {
 
     private int mScore;
     private int mCorner;
@@ -13,7 +13,7 @@ public class Team {
     private TextView mFoulView;
 
 
-    public Team(TextView score, TextView corner, TextView foul) {
+     Team(TextView score, TextView corner, TextView foul) {
         mScore = 0;
         mCorner = 0;
         mFoul = 0;
@@ -22,22 +22,22 @@ public class Team {
         mFoulView = foul;
     }
 
-    public void addScore() {
+    void addScore() {
         mScore++;
         updateView();
     }
 
-    public void addCorner() {
+    void addCorner() {
         mCorner++;
         updateView();
     }
 
-    public void addFoul() {
+    void addFoul() {
         mFoul++;
         updateView();
     }
 
-    public void updateView() {
+    void updateView() {
         mScoreView.setText(String.valueOf(mScore));
         String strFoul = "Foul : ";
         if (mFoul > 1) {
@@ -52,7 +52,7 @@ public class Team {
 
     }
 
-    public void resetValue() {
+    void resetValue() {
         mScore = 0;
         mFoul = 0;
         mCorner = 0;
