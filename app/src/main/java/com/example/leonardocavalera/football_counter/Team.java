@@ -3,7 +3,7 @@ package com.example.leonardocavalera.football_counter;
 import android.widget.TextView;
 
 
-class Team {
+public class Team {
 
     private int mScore;
     private int mCorner;
