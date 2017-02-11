@@ -2,21 +2,17 @@ package com.example.leonardocavalera.football_counter;
 
 import android.widget.TextView;
 
-/**
- * Created by Leonardo Cavalera on 11/02/2017.
- */
-
 public class Team {
 
     private int mScore;
-    private  int mCorner;
-    private  int mFoul;
+    private int mCorner;
+    private int mFoul;
     private TextView mScoreView;
     private TextView mCornerView;
     private TextView mFoulView;
 
 
-    public Team(TextView score, TextView corner, TextView foul){
+    public Team(TextView score, TextView corner, TextView foul) {
         mScore = 0;
         mCorner = 0;
         mFoul = 0;
@@ -24,33 +20,38 @@ public class Team {
         mCornerView = corner;
         mFoulView = foul;
     }
-    public void addScore(){
+
+    public void addScore() {
         mScore++;
         updateView();
     }
-    public void addCorner(){
+
+    public void addCorner() {
         mCorner++;
         updateView();
     }
-    public void addFoul(){
+
+    public void addFoul() {
         mFoul++;
         updateView();
     }
-    public void updateView(){
+
+    public void updateView() {
         mScoreView.setText(String.valueOf(mScore));
         String strFoul = "Foul : ";
-        if (mFoul > 1){
+        if (mFoul > 1) {
             strFoul = "Fouls : ";
         }
         mFoulView.setText(String.valueOf(strFoul + mFoul));
         String strCorner = "Corner : ";
-        if (mCorner > 1){
+        if (mCorner > 1) {
             strCorner = "Corners : ";
         }
         mCornerView.setText(String.valueOf(strCorner + mCorner));
 
     }
-    public void resetValue(){
+
+    public void resetValue() {
         mScore = 0;
         mFoul = 0;
         mCorner = 0;
