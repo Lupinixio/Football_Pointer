@@ -2,10 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/backgroundPrimary"
     android:orientation="vertical">
-
-
 
 
     <LinearLayout
@@ -28,7 +26,6 @@
             android:orientation="vertical">
 
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -42,6 +39,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="onClick"
                     android:text="Team A"
                     android:textSize="24sp" />
 
@@ -70,34 +68,35 @@
                 </LinearLayout>
             </LinearLayout>
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <LinearLayout
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="wrap_content">
 
-                <Button
-                    android:id="@+id/goal_a_button"
-                    style="@style/ButtonTheme"
-                    android:onClick="onClick"
-                    android:text="@string/button_goal" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/corner_a_button"
-                    style="@style/ButtonTheme"
-                    android:onClick="onClick"
-                    android:text="@string/button_corner" />
+                    <Button
+                        android:id="@+id/goal_a_button"
+                        style="@style/ButtonTheme"
+                        android:onClick="onClick"
+                        android:text="@string/button_goal" />
 
-                <Button
-                    android:id="@+id/foul_a_button"
-                    style="@style/ButtonTheme"
-                    android:onClick="onClick"
-                    android:text="@string/button_foul" />
+                    <Button
+                        android:id="@+id/corner_a_button"
+                        style="@style/ButtonTheme"
+                        android:onClick="onClick"
+                        android:text="@string/button_corner" />
 
-            </LinearLayout>
-        </ScrollView>
+                    <Button
+                        android:id="@+id/foul_a_button"
+                        style="@style/ButtonTheme"
+                        android:onClick="onClick"
+                        android:text="@string/button_foul" />
+
+                </LinearLayout>
+            </ScrollView>
 
         </LinearLayout>
 
@@ -128,6 +127,7 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:onClick="onClick"
                     android:text="Team B"
                     android:textSize="24sp" />
 
@@ -155,41 +155,42 @@
                         android:gravity="center" />
                 </LinearLayout>
             </LinearLayout>
+
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/goal_b_button"
-                    style="@style/ButtonTheme"
-                    android:onClick="onClick"
-                    android:text="@string/button_goal" />
+                    <Button
+                        android:id="@+id/goal_b_button"
+                        style="@style/ButtonTheme"
+                        android:onClick="onClick"
+                        android:text="@string/button_goal" />
 
-                <Button
-                    android:id="@+id/corner_b_button"
-                    style="@style/ButtonTheme"
-                    android:onClick="onClick"
-                    android:text="@string/button_corner" />
+                    <Button
+                        android:id="@+id/corner_b_button"
+                        style="@style/ButtonTheme"
+                        android:onClick="onClick"
+                        android:text="@string/button_corner" />
 
-                <Button
-                    android:id="@+id/fail_b_button"
-                    style="@style/ButtonTheme"
-                    android:onClick="onClick"
-                    android:text="@string/button_foul" />
+                    <Button
+                        android:id="@+id/fail_b_button"
+                        style="@style/ButtonTheme"
+                        android:onClick="onClick"
+                        android:text="@string/button_foul" />
 
-            </LinearLayout>
+                </LinearLayout>
             </ScrollView>
 
         </LinearLayout>
     </LinearLayout>
 
 
-        <Button
+    <Button
             android:id="@+id/reset_button"
             style="@style/ButtonTheme"
             android:layout_margin="15sp"

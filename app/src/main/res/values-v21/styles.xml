@@ -7,4 +7,6 @@
         <item name="android:backgroundTint">@color/button</item>
 
     </style>
+
+    <style name="Football_App_Theme" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>
